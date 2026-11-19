@@ -430,28 +430,8 @@ button{ font-family:inherit; }
   width:clamp(190px,22vw,310px);
   height:auto;
 }
-.rule-star{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  width:clamp(150px,16vw,225px);
-  margin:9px auto 16px;
-}
-.rule-star i{
-  flex:1;
-  height:1px;
-  background:linear-gradient(90deg,rgba(200,164,92,0) 0%,rgba(200,164,92,.9) 100%);
-}
-.rule-star i:last-child{
-  background:linear-gradient(90deg,rgba(200,164,92,.9) 0%,rgba(200,164,92,0) 100%);
-}
-.rule-star svg{
-  width:9px; height:9px;
-  fill:var(--gold-deep);
-  flex:none;
-}
 .hero-title{
-  margin:0 0 8px;
+  margin:14px 0 8px;
   font-family:var(--serif);
   font-style:italic;
   font-weight:500;
@@ -631,7 +611,7 @@ button{ font-family:inherit; }
   overflow:hidden;
   padding:clamp(56px,7vw,104px) 0 clamp(60px,7vw,110px);
 }
-.mission{ background:var(--cream-deep); }
+.mission{ background:var(--cream-warm); }
 .vision{ background:var(--cream-warm); }
 
 .mission .wrap,
@@ -641,32 +621,6 @@ button{ font-family:inherit; }
   max-width:1200px;
 }
 
-.leaf{
-  position:absolute;
-  z-index:0;
-  mix-blend-mode:multiply;
-  pointer-events:none;
-  height:auto;
-}
-.leaf-left{
-  left:-3%;
-  bottom:-8%;
-  width:clamp(160px,21vw,320px);
-  opacity:.9;
-}
-.leaf-right{
-  right:-6%;
-  bottom:-14%;
-  width:clamp(200px,27vw,440px);
-  opacity:.85;
-}
-.leaf-top{
-  right:3%;
-  top:2%;
-  width:clamp(90px,12vw,190px);
-  opacity:.55;
-}
-
 .arc{
   position:absolute;
   display:block;
@@ -674,18 +628,6 @@ button{ font-family:inherit; }
   border-radius:50%;
   z-index:0;
   pointer-events:none;
-}
-.arc-1{
-  width:min(760px,62vw);
-  aspect-ratio:1;
-  left:-24%;
-  top:18%;
-}
-.arc-2{
-  width:min(1000px,80vw);
-  aspect-ratio:1;
-  right:-34%;
-  top:-16%;
 }
 .arc-3{
   width:min(900px,72vw);
@@ -831,7 +773,8 @@ button{ font-family:inherit; }
 }
 .products{
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:minmax(0,460px);
+  justify-content:center;
   gap:clamp(18px,2.2vw,30px);
 }
 .product{
@@ -846,7 +789,7 @@ button{ font-family:inherit; }
   box-shadow:0 26px 44px -34px rgba(31,43,24,.75);
 }
 .product-media{
-  aspect-ratio:4/3;
+  aspect-ratio:3/2;
   overflow:hidden;
   background:#f0e3d1;
 }
@@ -882,27 +825,39 @@ button{ font-family:inherit; }
   color:#1f2b18;
 }
 .product-desc{
-  margin:0 0 18px;
+  margin:0 0 20px;
   font-size:16px;
   line-height:1.6;
   color:#3d4733;
-  flex:1;
 }
-.product-price{
+.product-specs{
+  list-style:none;
+  margin:0 0 24px;
+  padding:0;
+  border-top:1px solid var(--line-soft);
+}
+.product-specs li{
   display:flex;
   align-items:baseline;
-  gap:10px;
-  margin:0 0 20px;
-  font-family:var(--caps);
-  font-size:14.5px;
-  letter-spacing:.08em;
-  color:#1f2b18;
+  justify-content:space-between;
+  gap:16px;
+  padding:10px 0;
+  border-bottom:1px solid var(--line-soft);
 }
-.product-price span{
-  font-family:var(--serif);
-  font-size:14px;
-  letter-spacing:0;
-  color:#6b7559;
+.product-specs span:first-child{
+  flex:none;
+  font-family:var(--caps);
+  font-size:9.5px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+  white-space:nowrap;
+}
+.product-specs span:last-child{
+  font-size:15.5px;
+  line-height:1.45;
+  color:#3d4733;
+  text-align:right;
 }
 .empty-note{
   margin:36px 0 0;
@@ -1188,7 +1143,7 @@ button{ font-family:inherit; }
   .values-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); }
 }
 
-@media (max-width:1024px){
+@media (max-width:1100px){
   .nav{
     position:fixed;
     top:0;
@@ -1274,7 +1229,6 @@ button{ font-family:inherit; }
     background:linear-gradient(180deg,#202b17 0%,rgba(32,43,23,0) 28%);
   }
 
-  .products{ grid-template-columns:repeat(2,minmax(0,1fr)); }
   .journal-grid{ grid-template-columns:1fr 1fr; }
   .contact-inner{ grid-template-columns:1fr; }
   .contact .display{ font-size:clamp(34px,6vw,52px); }
@@ -1307,7 +1261,6 @@ button{ font-family:inherit; }
   .promises-grid svg{ width:34px; height:34px; }
   .promises-grid span{ font-size:14px; }
 
-  .products{ grid-template-columns:1fr; }
   .journal-grid{ grid-template-columns:1fr; }
   .contact-list{ grid-template-columns:1fr; }
   .platform-grid{ grid-template-columns:1fr; }
@@ -1320,10 +1273,7 @@ button{ font-family:inherit; }
   .contact-card{ padding:32px 22px; }
   .contact-logo{ width:160px; }
 
-  .leaf-left{ width:36vw; opacity:.7; }
-  .leaf-right{ width:52vw; opacity:.75; }
-  .leaf-top{ display:none; }
-  .arc-1,.arc-2,.arc-3,.arc-4{ opacity:.6; }
+  .arc-3,.arc-4{ opacity:.6; }
 
   .footer-brand img{ width:190px; }
 }

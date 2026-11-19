@@ -63,7 +63,7 @@
   }
 
   /* close the drawer if the viewport grows past the mobile breakpoint */
-  var desktopQuery = window.matchMedia('(min-width: 1025px)');
+  var desktopQuery = window.matchMedia('(min-width: 1101px)');
   var handleBreakpoint = function (event) {
     if (event.matches) setMenu(false);
   };
