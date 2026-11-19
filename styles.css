@@ -1194,6 +1194,7 @@ button{ font-family:inherit; }
     top:0;
     right:0;
     z-index:110;
+    display:none;
     width:min(360px,88vw);
     height:100vh;
     height:100dvh;
@@ -1204,12 +1205,18 @@ button{ font-family:inherit; }
     gap:0;
     background:#f8efe2;
     box-shadow:-24px 0 60px -30px rgba(31,43,24,.6);
-    transform:translateX(101%);
-    transition:transform .38s cubic-bezier(.4,0,.2,1);
     overflow-y:auto;
     overscroll-behavior:contain;
   }
-  .nav.is-open{ transform:none; }
+  .nav.is-open{
+    display:flex;
+    transform:translateX(0);
+    animation:drawer-in .38s cubic-bezier(.4,0,.2,1) both;
+  }
+  @keyframes drawer-in{
+    from{ transform:translateX(100%); }
+    to{ transform:translateX(0); }
+  }
   .nav-link{
     width:100%;
     padding:12px 0;
