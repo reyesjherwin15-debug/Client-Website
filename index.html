@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Couronne — Cluster False Eyelashes Made from Pineapple Leaf Fiber</title>
+<meta name="theme-color" content="#f6ead9">
+<meta name="description" content="La Couronne crafts high-quality, safe and sustainable cluster false eyelashes from renewable pineapple leaf fiber (PALF). Crown Up, Glow Up.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-eye.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ── Utility bar ───────────────────────────────────────── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <ul class="socials" aria-label="La Couronne on social media">
+      <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.7v8z"/></svg>
+      </a></li>
+      <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16.6" cy="7.4" r="1.1"/></svg>
+      </a></li>
+      <li><a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3h-2.7v11.6a2.6 2.6 0 1 1-2.2-2.6V9.3a5.3 5.3 0 1 0 4.9 5.3V8.9a6.4 6.4 0 0 0 3.4 1V7.2a3.8 3.8 0 0 1-3.4-4.2z"/></svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── Header ────────────────────────────────────────────── -->
+<header class="header" id="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#home" aria-label="La Couronne — home">
+      <img class="brand-mark" src="assets/logo-emblem.webp" alt="" width="420" height="235" decoding="async">
+      <img class="brand-word" src="assets/logo-wordmark.webp" alt="La Couronne" width="560" height="99" decoding="async">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="nav-link is-active" href="#home">Home</a>
+
+      <div class="nav-item">
+        <button class="nav-link nav-toggle" id="shop-toggle" aria-expanded="false" aria-controls="shop-menu">
+          Shop
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </button>
+        <div class="dropdown" id="shop-menu">
+          <a href="#shop">All Products</a>
+          <a href="#shop">The Signature Cluster</a>
+          <a href="#shop">The Everyday Cluster</a>
+          <a href="#shop">The Volume Cluster</a>
+        </div>
+      </div>
+
+      <a class="nav-link" href="#about">About Us</a>
+      <a class="nav-link" href="#sustainability">Sustainability</a>
+      <a class="nav-link" href="#journal">Blog</a>
+      <a class="nav-link" href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" id="search-toggle" aria-expanded="false" aria-controls="search-bar" aria-label="Search products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <span class="actions-divider" aria-hidden="true"></span>
+      <a class="icon-btn bag" href="#shop" aria-label="Shopping bag — 0 items">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 9V6.6a3 3 0 0 1 6 0V9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="bag-count">(0)</span>
+      </a>
+      <button class="hamburger" id="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" id="search-bar" hidden>
+    <div class="search-form" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      <input id="search-input" type="search" placeholder="Search lashes, collections, or materials…" aria-label="Search products" autocomplete="off">
+      <button type="button" class="search-close" id="search-close" aria-label="Close search">Close</button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+<main id="main">
+
+  <!-- ── Hero ────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <img class="hero-lockup" src="assets/logo-lockup.webp" alt="La Couronne" width="660" height="399" decoding="async">
+        <span class="rule-star" aria-hidden="true">
+          <i></i>
+          <svg viewBox="0 0 24 24"><path d="M12 1.5 13.9 10 22.5 12 13.9 14 12 22.5 10.1 14 1.5 12 10.1 10z"/></svg>
+          <i></i>
+        </span>
+        <h1 class="hero-title">Cluster False Eyelashes</h1>
+        <p class="hero-sub">Made from Renewable Pineapple Leaf Fiber.</p>
+        <a class="btn btn-dark" href="#shop">Shop Our Products
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/hero-eye.webp" alt="Close-up of an eye wearing La Couronne cluster false eyelashes" width="1100" height="821" decoding="async" loading="eager">
+      </div>
+    </div>
+    <span class="hero-arc" aria-hidden="true"></span>
+  </section>
+
+  <!-- ── Promise strip ───────────────────────────────────── -->
+  <section class="promises" aria-label="Why choose La Couronne">
+    <ul class="promises-grid">
+      <li>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41C13 33 11 22 15 9c13 2 20 10 18 21-1 6-5 9-9 11z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M30 16c-6 5-10 12-12 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <span>Eco-Friendly<br>&amp; Biodegradable</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8 32.5 22h-6l4 8H17.5l4-8h-6z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M13 30 9 38c-1 2 0 3 2 3h7M35 30l4 8c1 2 0 3-2 3h-7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <span>Supports<br>Sustainable Farming</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 9h20l8 9-18 22L6 18z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M6 18h36M18 9l-4 9 10 22 10-22-4-9" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <span>High Quality<br>&amp; Safe</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 24h32M24 8c5 5 7.5 10 7.5 16S29 35 24 40c-5-5-7.5-10-7.5-16S19 13 24 8z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        <span>A Greener<br>Future Together</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Sustainability band ─────────────────────────────── -->
+  <section class="sustain" id="sustainability">
+    <div class="sustain-copy">
+      <p class="eyebrow eyebrow-line"><span>Nature’s Finest, Reimagined</span><i aria-hidden="true"></i></p>
+      <h2 class="sustain-title">Beauty Meets<br><em>Sustainability</em></h2>
+      <p class="sustain-text">Every set of La Couronne lashes begins with a pineapple leaf — agricultural waste transformed into soft, feather-light fibers. No new land, no extra water, no compromise on quality.</p>
+      <a class="btn btn-ghost" href="#about">Our Sustainability Promise
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 5.5 19.5 12 13 18.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="sustain-media">
+      <img src="assets/sustainability.webp" alt="La Couronne lash box open to reveal two trays of cluster lashes" width="1200" height="794" decoding="async" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ── Mission ─────────────────────────────────────────── -->
+  <section class="mission" id="about">
+    <img class="leaf leaf-left" src="assets/leaf-left.webp" alt="" aria-hidden="true" width="300" height="665" decoding="async" loading="lazy">
+    <img class="leaf leaf-right" src="assets/leaf-right.webp" alt="" aria-hidden="true" width="300" height="470" decoding="async" loading="lazy">
+    <img class="leaf leaf-top" src="assets/leaf-top.webp" alt="" aria-hidden="true" width="230" height="260" decoding="async" loading="lazy">
+    <span class="arc arc-1" aria-hidden="true"></span>
+    <span class="arc arc-2" aria-hidden="true"></span>
+
+    <div class="wrap">
+      <h2 class="display with-rules"><i aria-hidden="true"></i>Mission<i aria-hidden="true"></i></h2>
+      <p class="lead">“La Couronne’s mission is to provide consumers with high-quality, safe, and sustainable false eyelashes made from renewable pineapple leaf fiber (PALF). The enterprise is dedicated to enhancing beauty while reducing ecological impact, supporting local agricultural communities, and fostering inclusive growth. Through continuous innovation, strict quality assurance, and transparent business practices, La Couronne strives to empower individuals, strengthen industry trust, and achieve long-term sustainability in the false eyelashes sector.”</p>
+      <div class="divider" aria-hidden="true"><span></span><img src="assets/divider-palm.webp" alt="" width="135" height="90" decoding="async" loading="lazy"><span></span></div>
+    </div>
+  </section>
+
+  <!-- ── Vision ──────────────────────────────────────────── -->
+  <section class="vision">
+    <span class="arc arc-3" aria-hidden="true"></span>
+    <div class="wrap">
+      <h2 class="display with-rules"><i aria-hidden="true"></i>Vision<i aria-hidden="true"></i></h2>
+      <p class="lead">“By 2030, La Couronne envisions becoming a recognized leader in the sustainable false-eyelash industry, driven by innovative cluster false eyelashes made from pineapple leaf fiber (PALF). Through its commitment to superior product quality and environmental sustainability, La Couronne seeks to set new standards in sustainable beauty innovation, foster consumer confidence, promote responsible beauty consumption, and contribute to the long-term advancement of a more sustainable cosmetics industry.”</p>
+      <div class="divider" aria-hidden="true"><span></span><img src="assets/divider-palm.webp" alt="" width="135" height="90" decoding="async" loading="lazy"><span></span></div>
+    </div>
+  </section>
+
+  <!-- ── Core values ─────────────────────────────────────── -->
+  <section class="values" id="values">
+    <div class="wrap">
+      <p class="eyebrow center">What Guides Us</p>
+      <h2 class="display">Core Values</h2>
+      <p class="values-intro">At La Couronne, we are guided by our commitment to sustainability, innovation, quality, environmental stewardship, and beauty empowerment. Through these values, La Couronne aims to create lasting positive impacts on its customers, communities, and the Philippine beauty industry.</p>
+
+      <ul class="values-grid">
+        <li>
+          <span class="value-num">01</span>
+          <h3>Sustainability</h3>
+          <p>We transform renewable pineapple leaf fiber into beautiful lash products, supporting a more sustainable beauty industry.</p>
+        </li>
+        <li>
+          <span class="value-num">02</span>
+          <h3>Innovation</h3>
+          <p>We continuously seek creative and effective ways to improve our products and contribute to the advancement of sustainable beauty solutions.</p>
+        </li>
+        <li>
+          <span class="value-num">03</span>
+          <h3>Quality Excellence</h3>
+          <p>We uphold high standards of craftsmanship, ensuring that every false eyelash delivers durability, inclusivity, comfort, and safety.</p>
+        </li>
+        <li>
+          <span class="value-num">04</span>
+          <h3>Environmental Stewardship</h3>
+          <p>We are committed to minimize our production wastes and environmental footprint through sustainable practices.</p>
+        </li>
+        <li>
+          <span class="value-num">05</span>
+          <h3>Beauty Empowerment</h3>
+          <p>We believe beauty is a source of confidence and self-expression. We strive to empower individuals by providing products that enhance their natural beauty.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Product showcase ────────────────────────────────── -->
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <p class="eyebrow center">The Collection</p>
+      <h2 class="display">Product Showcase</h2>
+      <p class="section-sub">Cluster lashes for every mood — each one plant-based, recyclable, and kinder to the planet.</p>
+
+      <div class="products" id="products">
+        <article class="product" data-name="signature cluster classic natural soft">
+          <div class="product-media"><img src="assets/product-box.webp" alt="The Signature Cluster lash box in black and gold" width="900" height="597" decoding="async" loading="lazy"></div>
+          <div class="product-body">
+            <p class="product-tag">PALF · Plant-Based</p>
+            <h3>The Signature Cluster</h3>
+            <p class="product-desc">Our original set: soft, hand-tied clusters with a tapered tip that melts into your natural lash line.</p>
+            <p class="product-price">₱899 <span>40 clusters</span></p>
+            <a class="btn btn-outline" href="#platforms">Shop Now</a>
+          </div>
+        </article>
+
+        <article class="product" data-name="everyday cluster natural soft lightweight wispy">
+          <div class="product-media"><img src="assets/product-tray.webp" alt="Tray of La Couronne natural cluster lashes" width="520" height="750" decoding="async" loading="lazy"></div>
+          <div class="product-body">
+            <p class="product-tag">PALF · Plant-Based</p>
+            <h3>The Everyday Cluster</h3>
+            <p class="product-desc">Lightweight, wispy clusters sized for daytime — “same you, just more you.”</p>
+            <p class="product-price">₱749 <span>30 clusters</span></p>
+            <a class="btn btn-outline" href="#platforms">Shop Now</a>
+          </div>
+        </article>
+
+        <article class="product" data-name="volume cluster dramatic glam full">
+          <div class="product-media"><img src="assets/product-open.webp" alt="Open La Couronne lash box showing two full trays of volume clusters" width="900" height="600" decoding="async" loading="lazy"></div>
+          <div class="product-body">
+            <p class="product-tag">PALF · Plant-Based</p>
+            <h3>The Volume Cluster</h3>
+            <p class="product-desc">Denser, darker clusters for a full glam finish that holds its curl from morning to midnight.</p>
+            <p class="product-price">₱999 <span>48 clusters</span></p>
+            <a class="btn btn-outline" href="#platforms">Shop Now</a>
+          </div>
+        </article>
+      </div>
+      <p class="empty-note" id="empty-note" hidden>No products match that search — try “cluster”, “natural”, or “volume”.</p>
+    </div>
+  </section>
+
+  <!-- ── Where to shop / social ──────────────────────────── -->
+  <section class="where" id="platforms">
+    <div class="wrap">
+      <p class="eyebrow center light">E-commerce &amp; Social Media</p>
+      <h2 class="display light">Where to Find Us</h2>
+      <p class="section-sub light">Shop La Couronne on your favourite platform, or follow along for application tips and behind-the-scenes.</p>
+
+      <ul class="platform-grid">
+        <li><a href="https://shopee.ph" target="_blank" rel="noopener"><span class="platform-name">Shopee</span><span class="platform-note">Official Store</span></a></li>
+        <li><a href="https://lazada.com.ph" target="_blank" rel="noopener"><span class="platform-name">Lazada</span><span class="platform-note">Official Store</span></a></li>
+        <li><a href="https://shop.tiktok.com" target="_blank" rel="noopener"><span class="platform-name">TikTok Shop</span><span class="platform-note">Shop &amp; Live</span></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener"><span class="platform-name">Facebook</span><span class="platform-note">Community</span></a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener"><span class="platform-name">Instagram</span><span class="platform-note">@lacouronne.ph</span></a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noopener"><span class="platform-name">TikTok</span><span class="platform-note">@lacouronne.ph</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Journal ─────────────────────────────────────────── -->
+  <section class="journal" id="journal">
+    <div class="wrap">
+      <p class="eyebrow center">The Journal</p>
+      <h2 class="display">Notes on Beauty &amp; Better</h2>
+
+      <div class="journal-grid">
+        <article class="post">
+          <p class="post-meta">Materials · 4 min read</p>
+          <h3>Why Pineapple Leaf Fiber?</h3>
+          <p>Every pineapple harvest leaves behind mountains of leaves. We spin that agricultural waste into a soft, breathable fiber — no new farmland required.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>PALF is extracted from the long leaves left after the fruit is harvested, then washed, dried and refined. Because the raw material already exists, the process uses far less water and land than conventional synthetic lash fibers. The result is a lash that feels lighter on the eye and returns something to the farmers who grow it.</p>
+          </details>
+        </article>
+
+        <article class="post">
+          <p class="post-meta">Ritual · 3 min read</p>
+          <h3>Applying Cluster Lashes in Five Minutes</h3>
+          <p>Cluster lashes are the friendliest way to build volume at home — a few small fans, a little glue, and a mirror.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Curl your natural lashes, then apply a thin line of adhesive along the base of a cluster. Place it just under your lash line, starting at the outer corner and working inward. Give each cluster ten seconds to set before adding the next. Finish with a spoolie to blend everything together.</p>
+          </details>
+        </article>
+
+        <article class="post">
+          <p class="post-meta">Sustainability · 5 min read</p>
+          <h3>Our Journey to Zero Waste Packaging</h3>
+          <p>From recyclable cartons to soy-based inks, here is how we are shrinking the footprint behind every La Couronne set.</p>
+          <details>
+            <summary>Read More</summary>
+            <p>Our boxes are made from recycled board and printed with low-impact inks, and the lash trays are designed to be reused as travel cases. We also work with our partner farms to compost leftover leaf pulp, closing the loop on the material that started it all.</p>
+          </details>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ─────────────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <span class="arc arc-4" aria-hidden="true"></span>
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow">Contact Details</p>
+        <h2 class="display">Let’s Talk Lashes</h2>
+        <p class="contact-text">Questions about a set, a bulk order, or a partnership? Our team in Manila replies within one business day.</p>
+
+        <dl class="contact-list">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@lacouronne.ph">hello@lacouronne.ph</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+639175550142">+63 917 555 0142</a></dd>
+          </div>
+          <div>
+            <dt>Studio</dt>
+            <dd>Unit 7, The Greenery Workshops,<br>24 Mabini Street, Makati City,<br>Metro Manila, Philippines</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Monday – Friday, 9:00 AM – 6:00 PM (PHT)</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="contact-card">
+        <img src="assets/logo-full.webp" alt="La Couronne — Crown Up, Glow Up." class="contact-logo" width="460" height="298" decoding="async" loading="lazy">
+        <p>Follow the crown.</p>
+        <ul class="socials socials-dark" aria-label="La Couronne on social media">
+          <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.7v8z"/></svg>
+          </a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16.6" cy="7.4" r="1.1"/></svg>
+          </a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3h-2.7v11.6a2.6 2.6 0 1 1-2.2-2.6V9.3a5.3 5.3 0 1 0 4.9 5.3V8.9a6.4 6.4 0 0 0 3.4 1V7.2a3.8 3.8 0 0 1-3.4-4.2z"/></svg>
+          </a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo-full.webp" alt="La Couronne — Crown Up, Glow Up." width="460" height="298" decoding="async" loading="lazy">
+      <p>High-quality cluster false eyelashes made from renewable pineapple leaf fiber — crafted in the Philippines.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Footer">
+      <h3>Explore</h3>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About Us</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#journal">Blog</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Care</h3>
+      <a href="#contact">Shipping &amp; Returns</a>
+      <a href="#contact">Lash Care Guide</a>
+      <a href="#contact">Wholesale Enquiries</a>
+      <a href="#contact">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Visit</h3>
+      <p>Unit 7, The Greenery Workshops,<br>24 Mabini Street, Makati City,<br>Metro Manila, Philippines</p>
+      <p><a href="mailto:hello@lacouronne.ph">hello@lacouronne.ph</a></p>
+      <p><a href="tel:+639175550142">+63 917 555 0142</a></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© 2026 La Couronne. All rights reserved.</p>
+    <p class="footer-tag">Crown Up, Glow Up.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
