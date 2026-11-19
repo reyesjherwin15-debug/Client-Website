@@ -5,6 +5,7 @@
   var header = document.getElementById('site-header');
   var nav = document.getElementById('nav');
   var menuToggle = document.getElementById('menu-toggle');
+  var backdrop = document.getElementById('nav-backdrop');
   var shopToggle = document.getElementById('shop-toggle');
   var shopItem = shopToggle ? shopToggle.parentElement : null;
   var searchToggle = document.getElementById('search-toggle');
@@ -12,9 +13,13 @@
   var searchInput = document.getElementById('search-input');
   var searchClose = document.getElementById('search-close');
 
-  /* ---------- sticky header shadow ---------- */
+  /* ---------- sticky header state ---------- */
   var onScroll = function () {
-    if (header) header.classList.toggle('is-stuck', window.scrollY > 8);
+    var y = window.scrollY;
+    if (header) {
+      header.classList.toggle('is-stuck', y > 8);
+      header.classList.toggle('is-compact', y > 120);
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -26,6 +31,19 @@
     menuToggle.setAttribute('aria-expanded', String(open));
     menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     document.body.classList.toggle('nav-open', open);
+
+    if (!backdrop) return;
+    if (open) {
+      backdrop.hidden = false;
+      /* force a reflow so the fade transition always runs, even in hidden tabs */
+      void backdrop.offsetHeight;
+      backdrop.classList.add('is-visible');
+    } else {
+      backdrop.classList.remove('is-visible');
+      window.setTimeout(function () {
+        if (!nav.classList.contains('is-open')) backdrop.hidden = true;
+      }, 300);
+    }
   }
 
   if (menuToggle) {
@@ -34,12 +52,23 @@
     });
   }
 
+  if (backdrop) {
+    backdrop.addEventListener('click', function () { setMenu(false); });
+  }
+
   if (nav) {
     nav.addEventListener('click', function (event) {
-      var link = event.target.closest('a');
-      if (link) setMenu(false);
+      if (event.target.closest('a')) setMenu(false);
     });
   }
+
+  /* close the drawer if the viewport grows past the mobile breakpoint */
+  var desktopQuery = window.matchMedia('(min-width: 1025px)');
+  var handleBreakpoint = function (event) {
+    if (event.matches) setMenu(false);
+  };
+  if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', handleBreakpoint);
+  else if (desktopQuery.addListener) desktopQuery.addListener(handleBreakpoint);
 
   /* ---------- shop dropdown ---------- */
   if (shopToggle) {
@@ -100,8 +129,7 @@
     var shown = 0;
 
     productNodes.forEach(function (card) {
-      var haystack = (card.getAttribute('data-name') || '') + ' ' +
-        (card.textContent || '').toLowerCase();
+      var haystack = (card.getAttribute('data-name') || '') + ' ' + (card.textContent || '');
       var match = !query || haystack.toLowerCase().indexOf(query) !== -1;
       card.hidden = !match;
       if (match) shown += 1;
